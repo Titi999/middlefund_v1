@@ -1,0 +1,172 @@
+header{
+    background-color: #3A3838;
+    border-color: #3A3838;
+    z-index: 5;
+}
+
+nav{
+    background-color: #5F5F5F;
+    border-color: #3A3838;
+    
+}
+nav ul li{
+	margin-left: 10px;
+}
+
+nav ul li a{
+    color: white;
+}
+nav ul li a:hover{
+    background-color: #A49370;
+}
+
+nav ul {
+    margin-left: -20px; 
+    font-size: 25px;
+    margin-top: 50px;
+   
+}
+
+aside div{
+    background-color: #3A3838;
+    border-color: #5F5F5F;
+    
+}
+
+main{
+    background-color: #3A3838;
+    border-color: #3A3838;
+    scroll-behavior: smooth;
+    overflow: auto;
+	
+}
+
+#mainContainer{
+	overflow-y: auto;
+    
+}
+main h1{
+	text-align: center;
+	color: #A49370;
+	text-transform: uppercase;
+	font-size: xx-large;
+    
+    
+    
+}
+
+footer{
+    background-color: #3A3838;
+    color: white;
+    border-color: #3A3838;
+}
+
+#aside{
+	background-color: #3A3838;
+}
+#nav{
+	width: 60px;
+}
+
+#logo{
+	width: 1000px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+
+.item{
+    background-color: #5F5F5F;
+    width: 300px;
+    padding: 50px 20px 50px 20px;
+    margin-bottom: 40px;
+}
+
+.text-white{
+    color: white;
+}
+.text-gold
+{
+    color: #BCA576;
+}
+
+.contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.space{
+    margin-left: 15px;
+}
+
+.mytop{
+    margin-top: 15px;
+}
+/* .fa, .fas{
+    border-radius: 45%;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 20px;
+    padding: 5px;
+    width: 20px;
+    margin-right: 10px;
+    color: whitesmoke;
+}
+.fa:hover, .fas:hover{
+    color: #A49370;
+} */
+
+@media screen and ( max-width:640px) {
+    .container{
+        
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .item{
+        margin-bottom: 40px;
+    }
+  }
+
+#notiNum{
+      font-size: x-small;
+      border-radius:50%;
+      height:20px;
+      width:20px;
+      margin:25px;
+      text-align:center;
+      color:white;
+  }
+  .notiNum{
+      margin-top:-2px;
+  }
+
+@media screen and ( max-width:450px) {
+.mobileNot{
+    min-width: 330px;
+}
+}
+@media screen and ( max-width:350px) {
+.mobileNot{
+    min-width: 280px;
+    padding-right: 10px;
+}
+}
+@media screen and ( max-width:300px) {
+.mobileNot{
+    min-width: 240px;
+    margin-left: 30px;
+
+}
+}
+  
+
+

@@ -1,0 +1,486 @@
+@import url('http://fonts.cdnfonts.com/css/sf-pro-display');
+
+*{
+    font-family: 'SF Pro Display', sans-serif !important;
+}
+
+body{
+    background-color: #3A3838;
+}
+
+input{
+    border: 1px solid white ;
+    border-radius: 5px ;
+    background-color:#3A3838 ;
+    transition:2s;
+    color: white;
+    outline: none;
+	transform-style:preserve-3d;
+    font-weight: 5px;
+    width: 260px;
+    height: 20px
+  }
+  textarea{
+    border: 1px solid white ;
+    border-radius: 5px ;
+    background-color:#3A3838 ;
+    color: white;
+    font-weight: 5px;
+  }
+  select {
+    height: 25px;
+    border: 1px solid white ;
+    border-radius: 5px ;
+    background-color:#3A3838 ;
+    transition:2s;
+    color: white;
+    outline: none;
+	transform-style:preserve-3d;
+    width: 260px;
+    font-weight: 1px;
+    height: 20px;
+  }
+ 
+
+  .onleft{
+      margin-left: 3%;
+      
+  }
+
+  .onright{
+      margin-left: 10%;
+  }
+
+  hr{
+      border: 1px solid #A49370 ; 
+  }
+
+  h4{
+      color: white;
+      margin-left: 3%;
+      font-weight: normal;
+  }
+  h5{
+      color:#A49370 ;
+      margin-left: 3%;
+      font-weight: normal;
+  }
+
+  label{
+      font-size: 13px;
+      color: white;
+  }
+
+  #q4{
+      height: 40px;
+  }
+  .vl {
+    border-left: 1px solid #A49370;
+    height: 300px;
+    position: relative;
+    margin-left: 8%;
+   display: flex;
+    top: 0;
+  }
+  @media screen and (max-width:675px) {
+    .onright{
+        margin-left: 3%;
+    }
+  
+  }
+  .memInfo{
+    height: fit-content; 
+    background-color:#3A3838 ;
+    color: white;
+    margin-left: 1.5%; 
+    border-radius: 3%; 
+    width: 300px;
+  }
+
+   @media screen and (max-width: 350px){
+    .memInfo{
+        width: 230px;
+       
+    }
+}
+
+  @media screen and (max-width:640px) {
+    .vl {
+        display: none;
+    }
+    }
+  .flex-container{
+      display: flex;
+      flex-direction: row;
+  }
+  @media screen and (max-width:640px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    }
+    @media screen and (max-width:640px) {
+        .mybutton{
+            margin-bottom: 10px;
+        }
+
+        pre{
+            margin-bottom: 5%;
+        }
+        #button2{
+            margin-top: 15%;
+        }
+        }
+
+  #button1{
+    background-color: black;
+    color: white;
+}
+
+  #button2{
+      background-color: black;
+      color: white;
+    margin-left: 34%;
+    width: 120px;
+    height: 30px;
+    margin-bottom: 1%;
+  }
+
+
+  #button3{
+    background-color: white;
+    color: black;
+  width: 135px;
+  height: 45px;
+  margin-bottom: 1%;
+}
+#button3:hover{
+    background-color: #A49370;
+    color: white;
+}
+
+
+  button{
+      border-style:solid ;
+      border-radius:4px;
+      border-color: transparent;
+  }
+
+  .myinput{
+      margin: 10px 5px 10px 10px;
+      
+  }
+
+.submitButton{
+    text-align: center;
+    padding: 60px 10px;
+    
+}
+
+#addMember{
+    padding: 4px 10px;
+    outline: none;
+    background-color:#A49370;
+    border-radius: 6px; 
+    color: white;
+}
+
+#addMember:hover{
+    background-color: black;
+
+}
+
+
+.container{
+    height: 300px;
+    width: 230px;
+    position: relative;
+    margin-left: 50px;
+  }
+  .container .wrapper{
+    position: relative;
+    height: 150px;
+    width: 90%;
+    border-radius: 10px;
+    background: #fff;
+    border: 2px white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .wrapper.active{
+    border: none;
+  }
+  .wrapper .image{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrapper img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .wrapper .icon{
+    font-size: 100px;
+    color: #9658fe;
+  }
+  .wrapper .text{
+    font-size: 20px;
+    color: #5B5B7B;
+  }
+  .wrapper #cancel-btn i{
+    position: absolute;
+    font-size: 20px;
+    right: 15px;
+    top: 15px;
+    color: #A49370;
+    cursor: pointer;
+    display: none;
+  }
+  .wrapper.active:hover #cancel-btn i{
+    display: block;
+  }
+  .wrapper #cancel-btn i:hover{
+    color: #e74c3c;
+  }
+  .wrapper .file-name{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 8px 0;
+    font-size: 18px;
+    color: #fff;
+    display: none;
+    background: #A49370
+  }
+  .wrapper.active:hover .file-name{
+    display: block;
+  }
+  .container #custom-btn{
+    margin-top: 30px;
+    display: block;
+    width: 68%;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: #A49370
+  }
+  .container #custom-btn:hover{
+      background: black;
+  }
+
+  #preview-container {
+   
+    width: 400px;
+}
+
+
+#upload-dialog, #upload-video, #upload-IDs {
+    margin-left: 50px;
+    padding: 5px;
+    border: 1px solid #A49370;
+    color: white;
+    background: #A49370;
+    font-size: inherit;
+    font-family: inherit;
+    outline: none;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+#upload-dialog:hover, #upload-video:hover, #upload-IDs:hover{
+    background: black;
+    border: 1px solid black;
+}
+
+#pdf-file {
+    display: none;
+}
+
+#pdf-loader {
+	display: none;
+	vertical-align: middle;
+	color: #cccccc;
+    font-size: 12px;
+}
+
+#pdf-preview {
+    display: none;
+    vertical-align: middle;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 2px;
+}
+
+#pdf-name {
+    display: none;
+    vertical-align: middle;
+    color: #A49370;
+    margin: 0 15px;
+    max-width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#upload-button {
+    padding: 5px;
+    border: 1px solid #A49370;
+    background-color: #A49370;
+    color: white;
+    font-size: inherit;
+    font-family: inherit;
+    outline: none;
+    display: none;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+#upload-button:hover{
+    background: black;
+}
+
+#cancel-pdf {
+    display: none;
+    vertical-align: middle;
+    padding: 0px;
+    border: none;
+    color: red;
+    background-color: white;
+    font-size: inherit;
+    font-family: inherit;
+    outline: none;
+    vertical-align: middle;
+    cursor: pointer;
+    margin: 0 0 0 15px;
+}
+
+#cancel-pdf:hover{
+    background: black;
+}
+
+video {
+    border: 1px solid black;
+    display: block;
+  }
+
+  .ui-sortable-placeholder { 
+    border: 1px dashed black!important; 
+    visibility: visible !important;
+    background: #A49370 !important;
+   }
+.ui-sortable-placeholder * { visibility: hidden; }
+    .RearangeBox.dragElemThumbnail{opacity:0.6;}
+    .RearangeBox {
+        width: 180px;
+        height:240px;
+        padding:10px 5px;
+        cursor: all-scroll;
+        border: 1px solid #A49370;
+        font-family: sans-serif;
+        display: inline-block;            
+        margin: 5px!important;
+        text-align: center;
+        color: white;
+        background: #A49370;
+      /*color: rgb(34, 34, 34);
+        background: #f3f2f1;     */
+    }
+
+
+
+
+
+
+.IMGthumbnail{
+max-width:168px;
+height:220px;
+margin:auto;
+padding:2px;
+border:none;
+}
+
+.IMGthumbnail img{
+max-width:100%;
+max-height:100%;
+}
+
+.imgThumbContainer{
+
+margin:4px;
+border: solid;
+display: inline-block;
+justify-content: center;
+position: relative;
+border: 1px solid rgba(0,0,0,0.14);
+-webkit-box-shadow: 0 0 4px 0 rgba(0,0,0,0.2);
+box-shadow: 0 0 4px 0 rgba(0,0,0,.2);
+}
+
+
+
+.imgThumbContainer > .imgName{
+text-align:center;
+padding: 2px 6px;
+margin-top:4px;
+font-size:13px;
+height: 15px;
+overflow: hidden;
+}
+
+.imgThumbContainer > .imgRemoveBtn{
+position: absolute;
+color: #e91e63ba;
+right: 2px;
+top: 2px;
+cursor: pointer;
+display: none;
+}
+
+.RearangeBox:hover > .imgRemoveBtn{ 
+display: block;
+}
+
+#wrapper
+{
+ text-align:center;
+ margin:0 auto;
+ padding:0px;
+ width:995px;
+}
+#output_image
+{
+ max-width:150px;
+}
+@media screen and ( max-width:450px) {
+.mobileNot{
+    min-width: 330px;
+}
+}
+@media screen and ( max-width:350px) {
+.mobileNot{
+    min-width: 280px;
+    padding-right: 10px;
+}
+}
+@media screen and ( max-width:300px) {
+.mobileNot{
+    min-width: 240px;
+    margin-left: 30px;
+
+}
+}

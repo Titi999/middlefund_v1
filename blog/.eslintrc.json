@@ -1,0 +1,38 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": ["eslint:recommended", "plugin:prettier/recommended"],
+  "parserOptions": {
+    "ecmaFeatures": {},
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["prettier"],
+  "settings": {},
+  "rules": {
+    "max-len": "off",
+    "prefer-promise-reject-errors": "off",
+    "no-return-assign": "off",
+    "global-require": "off",
+    "no-unused-vars": "warn",
+    "no-plusplus": "off",
+    "prefer-const": "off",
+    "no-constant-condition": "off",
+    "no-nested-ternary": "off",
+    "import/prefer-default-export": "off",
+    "no-multi-spaces": "warn",
+    "eslint-disable-next-line": "off",
+    "import/no-unresolved": "off",
+    "indent": ["warn", 2],
+    "prettier/prettier": [
+      "warn",
+      {},
+      {
+        "usePrettierrc": true
+      }
+    ]
+  }
+}

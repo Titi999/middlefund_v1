@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:ital,wght@0,400;1,100;1,200&display=swap');
+@import url('http://fonts.cdnfonts.com/css/sf-pro-display');
+
+html,body{
+	 font-family: 'SF Pro Display', sans-serif;
+}
+header{
+    background-color: #3A3838;
+    border-color: #3A3838;
+    z-index: 5;
+}
+
+nav{
+    background-color: #5F5F5F;
+    border-color: #3A3838;
+    
+}
+nav ul li{
+	margin-left: 10px;
+}
+
+nav ul li a{
+    color: white;
+}
+nav ul li a:hover{
+    background-color: #A49370;
+}
+
+nav ul {
+    margin-left: -20px; 
+    font-size: 25px;
+    margin-top: 50px;
+   
+}
+
+aside div{
+    background-color: #3A3838;
+    border-color: #5F5F5F;
+    
+}
+
+main{
+    background-color: #3A3838;
+    border-color: #3A3838;
+	
+}
+
+#mainContainer{
+	overflow-y: auto;
+}
+main h1{
+	text-align: center;
+	color: #A49370;
+	text-transform: uppercase;
+	font-size: xx-large;
+}
+footer{
+    background-color: #3A3838;
+    color: white;
+    border-color: #3A3838;
+}
+
+.the-active{
+    min-height: 100%  
+}
+.faq-list {
+    color: white;
+    list-style: none;
+    padding: 0;
+   overflow-y: auto;
+}
+
+.faq-list li {
+    border-radius: 10px;
+    margin: 10% 0;
+    border: 1px solid #5F5F5F;
+    padding: 2% 5%;
+    margin: 0px auto 30px;
+    text-align: left;
+    width:50%;
+    text-align: center;
+}
+input[type=number], input[type=text], input[type=password]{
+    background-color: #3A3838;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    height: 5%;
+    font-size: small;
+}
+
+label{
+    color: #A49370;
+}
+
+
+.faq-list .faq-heading::before {
+    content: '+';
+   font-size: 40px;
+    display: block;
+    position: absolute;
+   right:0;
+   left: 102%;
+    top: -15px;
+  color:white;
+}
+
+.faq-list .the-active .faq-heading::before {
+    content: '-';
+  
+}
+
+.faq-heading {
+    position: relative;
+    cursor: pointer;
+    font-size: 18px;
+  font-weight: 400;
+  margin:0;
+}
+
+.faq-heading:hover {
+    color: var(--theme-color);
+}
+
+.faq-text {
+    display: none;
+}
+.container {
+  min-height:70vh;
+  width: 1200px;
+  margin: auto;
+}
+.art-box svg {
+  width:100%;
+}
+.row {
+  display:flex;
+}
+.row .col {
+  flex-basis: 50%;
+}
+.read {
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 25px;
+}
+
+.update {
+    background-color: #5F5F5F;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 7px;
+    align-items: center;
+  }
+  .update:hover{
+      background-color: #A49370;
+  }
+  .changesDiv{
+      text-align: center;
+  }
+
+  @media only screen and (max-width: 662px) {
+    .faq-list li {
+        width:80%;
+        
+    }
+    input[type=number], input[type=text], input[type=password]{
+        width: 80%;
+    }
+
+    .faq-list .faq-heading::before {
+       left: 98%;
+    }
+    .faq-heading {
+      
+        font-size: 15px;
+     
+    }
+
+  }
+
+  .alert--danger {
+	 padding: 15px 30px;
+	 margin-bottom: 15px;
+	 border-radius: 3px;
+	 border-bottom: 3px solid #d62c1a;
+	 letter-spacing: 0.5px;
+	 color: rgba(255, 255, 255, .8);
+	 background-image: linear-gradient(#ef8b80, #e74c3c);
+	 box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+}
+ .alert--success {
+	 padding: 15px 30px;
+	 margin-bottom: 15px;
+	 border-radius: 3px;
+	 border-bottom: 3px solid #25a25a;
+	 letter-spacing: 0.5px;
+	 color: rgba(255, 255, 255, .8);
+	 background-image: linear-gradient(#69dd9a, #2ecc71);
+	 box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+}
+ #alert--danger {
+	 padding: 15px 30px;
+	 margin-bottom: 15px;
+	 border-radius: 3px;
+	 border-bottom: 3px solid #d62c1a;
+	 letter-spacing: 0.5px;
+	 color: rgba(255, 255, 255, .8);
+	 background-image: linear-gradient(#ef8b80, #e74c3c);
+	 box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+}
+ #alert--success {
+	 padding: 15px 30px;
+	 margin-bottom: 15px;
+	 border-radius: 3px;
+	 border-bottom: 3px solid #25a25a;
+	 letter-spacing: 0.5px;
+	 color: rgba(255, 255, 255, .8);
+	 background-image: linear-gradient(#69dd9a, #2ecc71);
+	 box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+}
+ 
+ #profileDisplay
+ { 
+    display: block; 
+    height: 150px;
+    width: 150px; 
+    margin: 0px auto; 
+    border-radius: 50%; 
+    object-fit: fill;
+    cursor: pointer;
+ }
+
+.img-placeholder {
+  width: 60%;
+  color: white;
+  height: 100%;
+  background: black;
+  opacity: .7;
+  height: 210px;
+  border-radius: 50%;
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.img-placeholder h4 {
+  margin-top: 40%;
+  color: white;
+}
+
+.img-div:hover .img-placeholder {
+  display: block;
+  cursor: pointer;
+}
+
+#notiNum{
+      font-size: x-small;
+      border-radius:50%;
+      height:20px;
+      width:20px;
+      margin:25px;
+      text-align:center;
+      color:white;
+  }
+  .notiNum{
+      margin-top:-2px;
+  }
+
+  .ms-options-wrap > button:focus, .ms-options-wrap > button{
+      background: #3A3838 !important;
+      border: 1px solid white !important;
+    border-radius: 5px;
+    color: white !important;
+}
+  
+  .ms-options-wrap > .ms-options{
+      background: #3A3838 !important;
+      text-align: center;
+  }
+
+  .ms-options-wrap > .ms-options > ul > li {
+      width: 100% !important;
+      padding: 0 0 0 0 !important;
+      border-radius: 0%;
+  }
+
+  .ms-options-wrap > .ms-options > ul label{
+      padding: 0 0 !important; 
+    margin: 0 0 !important;
+        font-size: smaller;
+  }
+
+
+
+

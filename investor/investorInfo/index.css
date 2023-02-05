@@ -1,0 +1,152 @@
+@import url('http://fonts.cdnfonts.com/css/sf-pro-display');
+
+*{
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+.main{
+    display: grid;
+    gap: 1px;
+    grid-template-columns: 50% 50% ;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.left, .right{
+    display: inline-grid;
+}
+
+@media(max-width: 850px){
+    .main {
+      grid-template-columns: 1fr;
+    }
+}
+
+
+
+.submitContainer{
+    display: flex;
+    justify-content: right;
+    margin: 100px;
+}
+.pure-control-group .textNumber{
+    width: 400px;
+    height: 53px;
+    border-radius: 10px !important;
+}
+
+.firstSelect{
+    width:158px;
+    height: 33px;
+    border-radius: 10px !important;
+}
+
+.multiselect{
+    width: 400px !important;
+    height: 53px !important;
+    border-radius: 10px !important;
+
+} 
+
+@media(max-width: 450px){
+    .pure-control-group .textNumber{
+        width: 300px;
+        height: 53px;
+        border-radius: 10px !important;
+    }
+    .multiselect{
+        width: 300px !important;
+        height: 53px !important;
+        border-radius: 10px !important;
+    
+    } 
+}
+
+@media(max-width: 1113px){
+    .pure-control-group label{
+        width: 200px !important;
+      
+    }
+
+}
+
+@media(max-width: 1200px){
+    .main{
+        margin-left: 15px;
+    }
+
+}
+
+@media(max-width: 350px){
+    .pure-control-group .textNumber{
+        width: 200px;
+        height: 53px;
+        border-radius: 10px !important;
+    }
+    .multiselect{
+        width: 200px !important;
+        height: 53px !important;
+        border-radius: 10px !important;
+    
+    } 
+}
+
+.submitBtn{
+    width: 150px;
+    height: 53px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.submitBtn:hover{
+    background-color: black;
+    color: #fff;
+}
+
+.form-control {
+    width: 100%;
+  }
+  .multiselect-container {
+    box-shadow: 0 3px 12px rgba(0,0,0,.175);
+    margin: 0;
+  }
+  .multiselect-container .checkbox {
+    margin: 0;
+    text-align: left !important;
+  }
+  .multiselect-container li {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    
+  }
+  .multiselect-container li a {
+    line-height: 25px;
+    margin: 0;
+    padding:0 35px;
+    
+  }
+  /* .custom-btn {
+    width: 100% !important;
+  } */
+   .custom-btn .btn, .custom-multi {
+    border: 1px solid #ccc !important;
+    
+  }
+  
+  .dropdown-menu{
+    width: 400px;
+    padding: 5px 30px !important;
+  }
+
+  .dropdown-menu > .active > a:hover {
+    color:inherit;
+  }
+
+  .heading{
+    margin: 50px 30px;
+   
+  }

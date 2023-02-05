@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:ital,wght@0,400;1,100;1,200&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  font-family: inherit;
+  font-size: inherit;
+  color: #f5f5f5;
+  background-color: #3a3838;
+}
+
+.header {
+  background-color: #3a3838;
+  width: 100%;
+}
+
+.header-container {
+  position: relative;
+  min-height: 5vh;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1rem 0;
+  margin: 0 auto;
+}
+
+.navmenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.navmenu a svg:hover {
+  fill: #a49370;
+}
+
+.navmenu > * {
+  height: 2.25rem;
+  width: 2.25rem;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.navmenu > *:not(:first-child) {
+  margin-left: 0.5rem;
+}
+
+.navmenu-icon {
+  height: 2rem;
+  width: auto;
+  color: #f1ecec;
+}
+.relative {
+  color: black;
+}
+
+.heading {
+  margin-top: 30px;
+  margin-left: 6%;
+  font-size: xx-large;
+  color: #a49370;
+  font-family: 'Playfair Display', serif;
+  display: flex;
+}
+.mainContainer {
+  background-color: #3a3838;
+  margin-top: -10px;
+  margin-bottom: 20%;
+}
+.paragraphs {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.fRight {
+  float: right;
+  margin-right: 10%;
+  text-align: center;
+}
+.fLeft {
+  float: left;
+  margin-left: 10%;
+  font-family: 'Playfair Display', serif;
+  line-height: 10px;
+}
+.fLeft h3 {
+  color: #a49370;
+}
+.fRight a {
+  color: white;
+  padding: 0.3em 3.7em;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: small;
+}
+.fRight a:hover {
+  background-color: #a49370;
+  border: 1px solid #a49370;
+}
+@media only screen and (max-width: 550px) {
+  .fRight {
+    float: right;
+    margin-left: 10%;
+    text-align: center;
+  }
+  .mainContainer {
+    margin-bottom: 50%;
+  }
+}
+@media only screen and (max-width: 461px) {
+  .fRight {
+    margin-left: 0%;
+    margin-right: 13%;
+  }
+  .fRight a {
+    padding: 0.3em 3em;
+    font-size: small;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .fRight {
+    margin-left: 0%;
+    margin-right: 8%;
+  }
+  .fRight a {
+    padding: 0.3em 3em;
+    font-size: small;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .fRight {
+    margin-left: 0%;
+    margin-right: 4%;
+  }
+  .fRight a {
+    padding: 0.3em 2em;
+    font-size: small;
+  }
+}
+@media only screen and (max-width: 295px) {
+  .fRight {
+    margin-left: 0%;
+    margin-right: 9%;
+  }
+  .fRight a {
+    padding: 0.3em 1em;
+    font-size: small;
+  }
+}
+@media only screen and (max-width: 250px) {
+  .fRight {
+    margin-left: 0%;
+    margin-right: 7%;
+  }
+  .fRight a {
+    padding: 0.3em 0.7em;
+    font-size: small;
+  }
+}

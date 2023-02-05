@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+    <link href="startupp1.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!--Side bar-->
+
+<nav class="nav nav-close" id="nav1">
+    <span class="material-icons-sharp nav_expand" style="color: white;">sort</span>
+    <ul class="nav_list">
+        <li class="nav_listitem"><a href="#" class="opt1">
+            <span class="material-icons-sharp"> account_circle</span>
+            <p class="vanish">Profile</p>
+        </a>
+        </li>
+
+        <li class="nav_listitem"><a href="#" class="opt1">
+            <span class="material-icons-sharp"> groups </span>
+            <p class="vanish"> View Investors</p>
+        </a>
+        </li>
+
+        <li class="nav_listitem"><a href="#" class="opt1">
+            <span class="material-icons-outlined">settings</span>
+            <p class="vanish">Settings</p>
+        </a>
+        </li>
+    </ul>
+    <div id="last-items">
+        <a href="#" class="bottom1"> Log out </a>
+        <a href="#" class="bottom2"> Contact Us</a>
+    </div>
+
+           <!--Header-->
+           <div class="header">
+            <img src="MiddlefundLogo.png" width="50px" height="40px">
+        
+        </div>
+
+
+</nav>
+<!--Start Up Portal-->
+<h1>Welcome To The Start Up Portal</h1>
+
+<div class="flipCardsMain">
+    <div class="flipCardContainer">
+      <div class="Box">
+        <div class="FlipBox">
+          <div class="Front">
+            <img src="pitch.svg">
+            <h1 style="margin-block-start: 0;">Submit Pitch</h1>
+          </div>
+          <div class="Back">
+            <div>
+            <h3>Submit Pitch</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+            <a href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Box">
+        <div class="FlipBox">
+          <div class="Front">
+            <img src="investors.svg">
+            <h1 style="margin-block-start: 0;">MiddleFund Platinum</h1>
+          </div>
+          <div class="Back">
+            <div>
+            <h3>MiddleFund Platinum</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+            <a href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Box">
+        <div class="FlipBox">
+          <div class="Front">
+            <img src="build.svg">
+            <h1 style="margin-block-start: 0;">Build Your Pitch</h1>
+          </div>
+          <div class="Back">
+            <div>
+            <h3>Build Your Pitch</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+            <a href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+   </div>
+  </div>
+
+<span class="contact">Contact Support</span>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+    /* Set the width of the sidebar to 160 (expand it) */
+
+    $(document).ready(() => {
+        const nav = $("#nav1");
+        nav.on('click', toggleNav)
+        const lastItems = $('#last-items')
+        const vanishItems = $('.vanish')
+        lastItems.hide();
+        function toggleNav() {
+            if (nav.width() === 50) {
+                nav.width(150);
+                lastItems.show();
+                vanishItems.show();
+            } else {
+                nav.width(50);
+                lastItems.hide();
+                vanishItems.hide();
+            }
+        }
+
+       
+
+        /*
+                let navExpand = document.querySelector(".nav_expand");
+                let nav = document.querySelector(".nav");
+                let navListItem = document.querySelectorAll(".nav_listitem");
+
+                navExpand.addEventListener("click", () => {
+                    nav.classList.toggle("nav-close");
+                });*/
+
+    })
+</script>
+
+</body>
+</html>

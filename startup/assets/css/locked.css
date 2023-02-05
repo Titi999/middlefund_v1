@@ -1,0 +1,90 @@
+#mainID{
+    overflow: none;
+}
+.lockMain {
+    background: #3A3838;
+	height: 100vh;
+	display: grid;
+	place-items: center;
+	overflow: hidden;
+    
+}
+
+.padlock {
+	font-size: 12px;
+	position: relative;
+	width: 16em;
+	-webkit-tap-highlight-color: #0000;
+    margin: 0px;
+}
+
+.padlock:before,
+.padlock__top,
+.padlock__top-a,
+.padlock__top-b,
+.padlock__bottom {
+	position: absolute;
+}
+.padlock__top,
+.padlock__top-a {
+	height: 14.5em;
+	top: 0;
+}
+.padlock__top {
+	width: 11.25em;
+	right: 2.375em;
+}
+.padlock__top-a,
+.padlock__top-b {
+	left: 0;
+	width: 100%;
+}
+.padlock__top-a {
+	border-radius: 50% 50% 0 0 / 5em 5em 0 0;
+	box-shadow: 0 0 0 2em #A49370 inset;
+	clip-path: polygon(
+		0 0,
+		100% 0,
+		100% 12.25em,
+		2em 12.25em,
+		2em 10.25em,
+		1.25em 10.75em,
+		1.25em 11.5em,
+		2em 11.5em,
+		2em 12.25em,
+		0 12.25em
+	)
+}
+.padlock__top-b {
+	box-shadow: -2em 0 0 #A49370 inset;
+	height: 3em;
+	top: 12em;
+}
+.padlock__bottom {
+	background: #A49370;
+	box-shadow:
+		0.75em 0 0 #A49370 inset,
+		2em 0 0 #A49370 inset,
+		-0.75em 0 0 #A49370 inset,
+		-3em 0 0 #A49370 inset;
+	border-radius: 0.5em;
+	width: 100%;
+	height: 10.75em;
+	top: 9.25em;
+}
+.padlock__sr {
+	clip: rect(1px,1px,1px,1px);
+	overflow: hidden;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+}
+ 
+ @media screen and (max-width: 400px) {
+     .pageLocked{
+         font-size: 10px
+     }
+     .padlock {
+	font-size: 9px;
+     }
+ } 

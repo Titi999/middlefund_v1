@@ -123,7 +123,7 @@ if(!$uppercase || !$lowercase || !$number || !$specialChars || strlen($password)
 			$mail -> Host = "smtp.gmail.com";
 			$mail-> SMTPAuth = true;
 			$mail -> Username = "noreply.middlefund@gmail.com";
-            $mail -> Password = 'zunclgvoyzirxotg';
+            $mail -> Password = '';
 			$mail -> Port = 465;
 			$mail -> SMTPSecure = "ssl";
 			$mail -> isHTML(true);
